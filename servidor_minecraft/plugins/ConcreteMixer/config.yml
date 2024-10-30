@@ -1,0 +1,39 @@
+# ConcreteMixer v1.2.0
+# Throw concrete powder into a cauldron, get concrete!
+
+meta:
+  # Please do not modify this value (it's used to update the config).
+  config-version: 1.2.0
+plugin:
+  # Can the plugin submit anonymous usage metrics to bStats?
+  # https://bstats.org/plugin/bukkit/ConcreteMixer/15590
+  # (Global bStats settings can be found in: /plugins/bStats/config.yml)
+  metrics: true
+  # Can the plugin check for updates?
+  # If an update is found, a notification will be sent to console.
+  check-for-updates: true
+cauldrons:
+  # If enabled, players must have access to the 'concretemixer.cauldrons'
+  # permission node in order to create concrete with cauldrons.
+  require-permission-node: false
+  # Should the cauldron's water level be lowered after successfully creating concrete?
+  lower-water-level: true
+effects:
+  # Toggle all effects.
+  enabled: true
+  splash:
+    particles:
+      enabled: true
+    sound:
+      enabled: true
+      name: ENTITY_GENERIC_SPLASH
+      volume: 0.75
+      pitch: 1.0
+  transform:
+    particles:
+      enabled: true
+    sound:
+      enabled: true
+      name: BLOCK_FIRE_EXTINGUISH
+      volume: 0.65
+      pitch: 1.25
